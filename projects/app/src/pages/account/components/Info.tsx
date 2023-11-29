@@ -247,7 +247,7 @@ const UserInfo = () => {
             )}
           </Flex>
         </Box>
-        {feConfigs?.docUrl && (
+        {/* {feConfigs?.docUrl && (
           <>
             <Flex
               mt={4}
@@ -274,7 +274,7 @@ const UserInfo = () => {
               </Box>
             </Flex>
           </>
-        )}
+        )} */}
         {feConfigs?.show_openai_account && (
           <>
             <Divider my={3} />

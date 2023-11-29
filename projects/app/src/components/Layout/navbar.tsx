@@ -174,7 +174,7 @@ const Navbar = ({ unread }: { unread: number }) => {
           </Link>
         </Box>
       )}
-      {feConfigs?.docUrl && (
+      {/* {feConfigs?.docUrl && (
         <MyTooltip label={t('home.Docs')} placement={'right-end'}>
           <Box
             {...itemStyles}
@@ -201,7 +201,7 @@ const Navbar = ({ unread }: { unread: number }) => {
             <MyIcon name={'git'} width={'22px'} height={'22px'} />
           </Link>
         </MyTooltip>
-      )}
+      )} */}
     </Flex>
   );
 };

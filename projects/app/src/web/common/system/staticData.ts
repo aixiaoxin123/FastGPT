@@ -14,7 +14,7 @@ import {
 } from '@fastgpt/global/core/ai/model';
 import { AppSimpleEditConfigTemplateType } from '@fastgpt/global/core/app/type';
 
-export let feConfigs: FeConfigsType = {};
+export let feConfigs: FeConfigsType = { show_openai_account: true };
 export let priceMd = '';
 export let systemVersion = '0.0.0';
 
