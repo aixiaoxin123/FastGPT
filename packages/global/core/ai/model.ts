@@ -12,7 +12,7 @@ export const defaultChatModels: ChatModelItemType[] = [
   {
     model: 'gpt-3.5-turbo-1106',
     name: 'GPT35-1106',
-    price: 0,
+    price: 0.0015,
     maxContext: 16000,
     maxResponse: 4000,
     quoteMaxToken: 2000,
@@ -26,7 +26,7 @@ export const defaultChatModels: ChatModelItemType[] = [
     name: 'GPT35-16k',
     maxContext: 16000,
     maxResponse: 16000,
-    price: 0,
+    price: 0.0015,
     quoteMaxToken: 8000,
     maxTemperature: 1.2,
     censor: false,
@@ -34,11 +34,11 @@ export const defaultChatModels: ChatModelItemType[] = [
     defaultSystemChatPrompt: ''
   },
   {
-    model: 'gpt-4',
-    name: 'GPT4-8k',
+    model: 'gpt-4-1106-preview',
+    name: 'GPT4-turbo',
     maxContext: 8000,
     maxResponse: 8000,
-    price: 0,
+    price: 0.02,
     quoteMaxToken: 4000,
     maxTemperature: 1.2,
     censor: false,
@@ -50,7 +50,7 @@ export const defaultChatModels: ChatModelItemType[] = [
     name: 'GPT4-Vision',
     maxContext: 128000,
     maxResponse: 4000,
-    price: 0,
+    price: 0.02,
     quoteMaxToken: 100000,
     maxTemperature: 1.2,
     censor: false,
@@ -64,7 +64,7 @@ export const defaultQAModels: LLMModelItemType[] = [
     name: 'GPT35-16k',
     maxContext: 16000,
     maxResponse: 16000,
-    price: 0
+    price: 0.0015
   }
 ];
 export const defaultCQModels: FunctionModelItemType[] = [
@@ -73,16 +73,16 @@ export const defaultCQModels: FunctionModelItemType[] = [
     name: 'GPT35-1106',
     maxContext: 16000,
     maxResponse: 4000,
-    price: 0,
+    price: 0.0015,
     functionCall: true,
     functionPrompt: ''
   },
   {
-    model: 'gpt-4',
-    name: 'GPT4-8k',
+    model: 'gpt-4-1106-preview',
+    name: 'GPT4-turbo',
     maxContext: 8000,
     maxResponse: 8000,
-    price: 0,
+    price: 0.02,
     functionCall: true,
     functionPrompt: ''
   }
@@ -93,7 +93,7 @@ export const defaultExtractModels: FunctionModelItemType[] = [
     name: 'GPT35-1106',
     maxContext: 16000,
     maxResponse: 4000,
-    price: 0,
+    price: 0.0015,
     functionCall: true,
     functionPrompt: ''
   }
@@ -104,7 +104,7 @@ export const defaultQGModels: LLMModelItemType[] = [
     name: 'GPT35-1106',
     maxContext: 1600,
     maxResponse: 4000,
-    price: 0
+    price: 0.0015
   }
 ];
 
@@ -112,7 +112,7 @@ export const defaultVectorModels: VectorModelItemType[] = [
   {
     model: 'text-embedding-ada-002',
     name: 'Embedding-2',
-    price: 0,
+    price: 0.0001,
     defaultToken: 500,
     maxToken: 3000
   }
@@ -124,7 +124,7 @@ export const defaultAudioSpeechModels: AudioSpeechModelType[] = [
   {
     model: 'tts-1',
     name: 'OpenAI TTS1',
-    price: 0,
+    price: 0.015,
     voices: [
       { label: 'Alloy', value: 'Alloy', bufferId: 'openai-Alloy' },
       { label: 'Echo', value: 'Echo', bufferId: 'openai-Echo' },
@@ -139,5 +139,5 @@ export const defaultAudioSpeechModels: AudioSpeechModelType[] = [
 export const defaultWhisperModel: WhisperModelType = {
   model: 'whisper-1',
   name: 'Whisper1',
-  price: 0
+  price: 0.006
 };
