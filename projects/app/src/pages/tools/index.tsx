@@ -29,25 +29,25 @@ const Tools = () => {
       icon: 'common/navbar/pluginLight',
       label: '自定义模块',
       link: '/plugin/list'
-    },
-    ...(feConfigs?.show_git
-      ? [
-          {
-            icon: 'git',
-            label: 'GitHub 地址',
-            link: 'https://github.com/labring/FastGPT'
-          }
-        ]
-      : []),
-    ...(feConfigs?.docUrl
-      ? [
-          {
-            icon: 'common/courseLight',
-            label: '使用文档',
-            link: `${feConfigs.docUrl}/docs/intro`
-          }
-        ]
-      : [])
+    }
+    // ...(feConfigs?.show_git
+    //   ? [
+    //     {
+    //       icon: 'git',
+    //       label: 'GitHub 地址',
+    //       link: ' '
+    //     }
+    //   ]
+    //   : []),
+    // ...(feConfigs?.docUrl
+    //   ? [
+    //     {
+    //       icon: 'common/courseLight',
+    //       label: '使用文档',
+    //       link: ` `
+    //     }
+    //   ]
+    //   : [])
   ];
 
   return (
